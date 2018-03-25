@@ -45,3 +45,23 @@
 .slider dl dd.selected {
     background: #f60;
 }
+
+.recommond {
+    width: 100%;
+}
+
+.recommond-line {
+    margin: 0;
+    width: 100%;
+    font-size: .1rem;
+}
+
+.recommond-block {
+    display: inline;
+    padding-right: .2rem;
+}
+
+.recommond-block img {
+    width: 2rem;
+    height: 2rem;
+}
