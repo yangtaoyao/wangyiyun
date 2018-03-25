@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: .77rem;
+    background-color:#ffffff;
+    position: relative;
+    border-bottom: 1px solid rgb(186, 186, 186);
+}
+.header .header-title1 {
+    height: .77rem;
+    line-height: .77rem;
+    position: absolute;
+    font-size: .36rem;
+    text-align: center;
+    left: 1.24rem;
+    color: red;
+}
+.header .header-title2 {
+    height: .77rem;
+    line-height: .77rem;
+    position: absolute;
+    font-size: .36rem;
+    text-align: center;
+    left: 3.43rem;
+}
+.header .header-title3 {
+    height: .77rem;
+    line-height: .77rem;
+    position: absolute;
+    font-size: .36rem;
+    text-align: center;
+    left: 5.69rem;
+}
+
+.section{
+    flex: 1;
+    /* 神奇的一段代码 */
+    height: 0;
+    overflow-y: scroll;
+}
+/*  */
+.section-box1{
+   
+}
+.section-box1 .title{
+    height: 1rem;
+    position: relative;
+    /* background-color: #ccc; */
+}
+.section-box1 .title h2{
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    font-size: .27rem;
+    text-align: center;
+    left: .24rem;
+    font-weight: bold;
+}
+.section-box1 .title span{
+    height: .40rem;
+   width: .09rem;
+    position: absolute;
+    background-color: red;
+    left: 0rem;
+    top:.35rem;
+}
+
+.section-box1 .content{
+/* height: 3.32rem; */
+display: flex;
+flex-direction: row;
+}
+.section-box1 .section-box1-block{
+    height: .36rem;
+}
+.section-box1 .content .content-box{
+    flex: 1;
+    width: 2.47rem;
+    
+}
+.section-box1 .content .content-box img{
+    display: block;
+    width: 2.47rem;
+    height: 2.47rem;
+}
+.section-box1 .content .content-box h2{
+    height: .83rem;
+    line-height:.3rem;
+    width: 2.5rem;
+    padding: .05rem .15rem ;
+    font-size: .18rem;
+    font-family: 微软雅黑;
+    color: #6e6c6e;
+}
+/*  */
+.section-box2 .title{
+    height: 1rem;
+    position: relative;
+    border-bottom: 1px solid rgb(186, 186, 186);
+    /* background-color: #ccc; */
+}
+.section-box2 .title h2{
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    font-size: .27rem;
+    text-align: center;
+    left: .24rem;
+    font-weight: bold;
+}
+.section-box2 .title span{
+    height: .40rem;
+   width: .09rem;
+    position: absolute;
+    background-color: red;
+    left: 0rem;
+    top:.35rem;
+}
+/*  */
+.section-box2 ul li{
+    border-bottom: 1px solid rgb(186, 186, 186);
+    height: 1.66rem;
+    display: flex;
+    flex-direction: row;
+}
+.section-box2 ul li div{
+    flex: 1;
+    height: 1.66rem;
+}
+
+.section-box2 ul li div .div1{
+    height: .106rem;
+}
+.section-box2 ul li div .div1 span{
+    width:.6rem;
+    display:inline-block;
+    border: 1px solid red;
+    font-size: .25rem;
+}
+.section-box2 ul li div .div1 p{
+    display: inline-block;
+    font-size: .23rem;
+}
+.section-box2 ul li div  .div2{
+   height: .6rem;
+}
+.section-box2 ul li div  .div2 em{
+    font-size: .27rem;
+}
+.section-box2 ul li div .div2 h4{
+    font-size: .27rem;
+    display: inline-block;
+}
+.section-box2 ul li img{
+    width: 2.47rem;
+    height: 1.66rem;
+}
