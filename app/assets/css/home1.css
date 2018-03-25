@@ -1,26 +1,40 @@
+
+.top-bar{
+    height:30px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    font-size: .35rem;
+}
+.top-bar h2{
+    display: inline;
+    line-height: 30px;
+    padding-left: 1.5rem;
+}
+.card-selected{
+    color: rgb(255, 0, 0);
+}
 .slider {
     width: 100%;
     height: 4rem;
-    margin: 0;
     position: relative;
     overflow: hidden;
 }
 
 .slider ul {
-    width: 1000px;
+    top:0;
+    position: absolute;
+    width: 100%;
     height: 100%;
 }
 
 .slider ul li {
-    list-style: none;
-    float: left;
-    width: 100%;
-    height: 4rem;
+    width: 7.5rem;
+    height: 100%;
 }
 
 .slider ul li img {
+    height: 100%;
     width: 100%;
-    height: 4rem;
 }
 
 .slider dl {
@@ -45,7 +59,33 @@
 .slider dl dd.selected {
     background: #f60;
 }
+.recommond-bar{
+    display: block;
+    font-size: .5rem;
+    height: 40px;
+    margin-top: .5rem;
+    /* border-top: 1px solid rgb(124, 125, 125); */
+    margin-bottom: .2rem;
+}
+.border-line{
+    display: block;
+    height: 0px;
+    width: 100%;
+    margin-top:20px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgb(242, 243, 245);
+}
 
+.recommond-bar span{
+    display: inline;
+    height: 10px;
+    width: 4px;
+    color: rgb(255, 0, 0);
+    background: rgb(255,0, 0);
+}
+.recommond-bar h2{
+    display: inline;
+}
 .recommond {
     width: 100%;
 }
@@ -57,11 +97,15 @@
 }
 
 .recommond-block {
-    display: inline;
-    padding-right: .2rem;
+    float: left;
+    padding:2px;
+    width: 2.4rem;
 }
 
 .recommond-block img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.recommond-block h2 {
+    height: 100%;
 }
