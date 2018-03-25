@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="styleshett" href="../common/css/font.css">
+    <link rel="styleshett" href="../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../assets/css/home1.css">
+    <title>首页</title>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+</head>
+
+<body>
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="../assets/images/首页轮播1.jpg">
+            </li>
+            <li>
+                <img src="../assets/images/首页轮播2.jpg">
+            </li>
+            <li>
+                <img src="../assets/images/首页轮播3.jpg">
+            </li>
+            <li>
+                <img src="../assets/images/首页轮播4.jpg">
+            </li>
+        </ul>
+        <dl></dl>
+    </div>
+
+    <script src="../common/js/jquery-1.11.3.min.js"></script>
+    <script src="../assets/js/velocity.min.js"></script>
+    <script src="../assets/js/slider.js"></script>
+    <script>
+        Slider({
+            $sliderWrapper: $('.slider'), // 必须
+            $sliderDotWrapper: $('.slider > dl'), //可选
+            autoPlay: true
+        });
+    </script>
+</body>
+
+</html>
