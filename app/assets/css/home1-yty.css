@@ -3,6 +3,12 @@ body {
     flex-direction: column;
     background:#f7f7f7;
 }
+.footer{
+    height: .95rem;
+}
+.footer img{
+    height: .95rem;
+}
 .header{
     height: .77rem;
     background-color:#ffffff;
@@ -179,19 +185,18 @@ flex-direction: row;
 }
 /* 猜你喜欢 */
 .section-box4 .content .content-box{
-    width: 3.58rem; 
+    width: 3.75rem; 
     float: left;
-    margin-right: .13rem;
 }
 .section-box4 .content .content-box img{
     display: block;
-    width: 3.58rem; 
+    width: 3.75rem; 
     height: 2.01rem;
 }
 .section-box4 .content .content-box h2{
     height: .87rem;
     line-height:.3rem;
-    width: 3.58rem; 
+    width: 3.75rem; 
     padding: .05rem .15rem ;
     font-size: .18rem;
     font-family: 微软雅黑;
