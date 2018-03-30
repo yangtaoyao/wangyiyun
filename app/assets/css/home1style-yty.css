@@ -7,7 +7,7 @@ html * {
     box-sizing: border-box;
 }
 body {
-    font-family: sans-serif;
+    font-family: 微软雅黑;
     color: rgb(39, 38, 54);
     min-height: 100%;
 }
