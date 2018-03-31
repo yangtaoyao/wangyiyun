@@ -20,7 +20,7 @@
 <body>
     <div class="header">
             <h2 class="header-title1">发现</h2>
-            <h2 class="header-title2">我的</h2>
+            <h2 class="header-title2"></h2>
             <h2 class="header-title3">电台</h2>
     </div>
     <div class="section">
@@ -40,6 +40,12 @@
                         </li>
                     </ul>
                 <dl></dl>
+         </div>
+         <div class="section-button">
+             <img src="assets/images/img-yty/b1.png" alt="">
+             <img src="assets/images/img-yty/b2.png" alt="">
+             <img class="list" src="assets/images/img-yty/b3.png" alt="">
+             <img src="assets/images/img-yty/b4.png" alt="">
          </div>
         <div class="section-box1">
             <div class="title">
@@ -190,6 +196,9 @@
             $sliderDotWrapper: $('.slider > dl'), //可选
             autoPlay: true
         });
+        $('.list').on('click', function(ev){
+			window.location.href="pages/list.html";
+		});
     </script>
 </body>
 </html>
