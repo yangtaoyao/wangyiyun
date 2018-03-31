@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../common/swiper.min.css">
     <link rel="stylesheet" href="../assets/css/home1-yty.css">
     <link rel="stylesheet" href="../assets/css/home1style-yty.css">
+    <link rel="stylesheet" href="../assets/css/home1.css">
     <title>Document</title>
     <script>
         var deviceWidth = document.documentElement.clientWidth;
@@ -23,6 +24,23 @@
             <h2 class="header-title3">电台</h2>
     </div>
     <div class="section">
+                <div class="slider">
+                    <ul>
+                        <li>
+                            <img src="../assets/images/首页轮播1.jpg">
+                        </li>
+                        <li>
+                            <img src="../assets/images/首页轮播2.jpg">
+                        </li>
+                        <li>
+                            <img src="../assets/images/首页轮播3.jpg">
+                        </li>
+                        <li>
+                            <img src="../assets/images/首页轮播4.jpg">
+                        </li>
+                    </ul>
+                <dl></dl>
+         </div>
         <div class="section-box1">
             <div class="title">
                 <span></span>
@@ -159,8 +177,19 @@
                 </ul>
         </div>
     </div>
+
     <footer class="footer">
         <img src="../assets/images/img-yty/footer.png" alt="">
     </footer>
+    <script src="../common/js/jquery-1.11.3.min.js"></script>
+    <script src="../assets/js/velocity.min.js"></script>
+    <script src="../assets/js/slider.js"></script>
+    <script>
+        Slider({
+            $sliderWrapper: $('.slider'), // 必须
+            $sliderDotWrapper: $('.slider > dl'), //可选
+            autoPlay: true
+        });
+    </script>
 </body>
 </html>
