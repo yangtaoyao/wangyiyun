@@ -1,0 +1,218 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background:#f7f7f7;
+}
+.footer{
+    height: .95rem;
+}
+.footer img{
+    height: .95rem;
+}
+.header{
+    height: .77rem;
+    background-color:#ffffff;
+    position: relative;
+    border-bottom: 1px solid rgb(186, 186, 186);
+}
+.header .header-title1 {
+    height: .77rem;
+    line-height: .77rem;
+    position: absolute;
+    font-size: .36rem;
+    text-align: center;
+    left: 1.24rem;
+    color: red;
+}
+.header .header-title2 {
+    height: .77rem;
+    line-height: .77rem;
+    position: absolute;
+    font-size: .36rem;
+    text-align: center;
+    left: 3.43rem;
+}
+.header .header-title3 {
+    height: .77rem;
+    line-height: .77rem;
+    position: absolute;
+    font-size: .36rem;
+    text-align: center;
+    left: 5.69rem;
+}
+
+.section{
+    flex: 1;
+    /* 神奇的一段代码 */
+    height: 0;
+    overflow-y: scroll;
+}
+/*  */
+
+.section-button{
+    height: 2.03rem;
+    display: flex;
+}
+.section-button img{
+    flex: 1;
+    height: 2.03rem;
+    display: block;
+}
+/*  */
+.section-box1{
+   
+}
+
+.section-box1 .content{
+/* height: 3.32rem; */
+display: flex;
+flex-direction: row;
+}
+.section-box1 .section-box1-block{
+    height: .36rem;
+}
+.section-box1 .content .content-box{
+    flex: 1;
+    width: 2.47rem;
+    
+}
+.section-box1 .content .content-box img{
+    display: block;
+    width: 2.47rem;
+    height: 2.47rem;
+}
+.section-box1 .content .content-box h2{
+    height: .83rem;
+    line-height:.3rem;
+    width: 2.5rem;
+    padding: .05rem .15rem ;
+    font-size: .18rem;
+    font-family: 微软雅黑;
+    color: #6e6c6e;
+}
+/*  */
+.title{
+    height: 1rem;
+    position: relative;
+    border-bottom: 1px solid rgb(186, 186, 186);
+    /* background-color: #ccc; */
+}
+.title h2{
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    font-size: .27rem;
+    text-align: center;
+    left: .24rem;
+    /* font-weight: bold; */
+}
+.title h2:hover{
+    color: red;
+}
+.title span{
+    height: .40rem;
+   width: .09rem;
+    position: absolute;
+    background-color: red;
+    left: 0rem;
+    top:.35rem;
+}
+/*  */
+.section-box2 ul li{
+    border-bottom: 1px solid rgb(186, 186, 186);
+    height: 1.66rem;
+    display: flex;
+    flex-direction: row;
+}
+.section-box2 ul li .div0{
+    flex: 1;
+    height: 1.66rem;
+    padding: .2rem .7rem .2rem .2rem;
+}
+
+.section-box2 ul li .div0 .div1{
+    height: .8rem;
+    text-align: left;
+    font-size: 0;
+    /* 去除inline-block元素间间距,在父元素设置font-size=0 */
+}
+.section-box2 ul li .div0 .div1 span{
+    width:.6rem;
+    display:inline-block;
+    border: 1px solid red;
+    font-size: .27rem;
+}
+.section-box2 ul li .div0 .div1 h4{
+    display: inline;
+    font-size: .3rem;
+    line-height: .35rem;
+    text-align: center;
+    font-family: 微软雅黑;
+}
+.section-box2 ul li .div0  .div2{
+   height: .46rem;
+   font-size: 0;
+   text-align: left;
+}
+.section-box2 ul li .div0  .div2 em{
+    height: .23rem;
+    display: inline-block;
+    font-size: .25rem;
+    color: #b5b2b5;
+    line-height: .46rem;
+}
+.section-box2 ul li .div0 .div2 h4{
+    font-size: .25rem;
+    height: .46rem;
+    display: inline-block;
+    color: #b5b2b5;
+    line-height: .46rem;
+}
+.section-box2 ul li img{
+    display: block;
+    width: 2.47rem;
+    height: 1.66rem;
+}
+/* VIP专区 */
+.section-box3 .content{
+    display: flex;
+    flex-direction: row;
+}
+.section-box3 .content .content-box{
+    flex: 1;
+    width: 2.47rem;
+    
+}
+.section-box3 .content .content-box img{
+    display: block;
+    width: 2.47rem;
+    height: 2.47rem;
+}
+.section-box3 .content .content-box h2{
+    height: .83rem;
+    line-height:.3rem;
+    width: 2.5rem;
+    padding: .05rem .15rem ;
+    font-size: .18rem;
+    font-family: 微软雅黑;
+    color: #6e6c6e;
+}
+/* 猜你喜欢 */
+.section-box4 .content .content-box{
+    width: 3.75rem; 
+    float: left;
+}
+.section-box4 .content .content-box img{
+    display: block;
+    width: 3.75rem; 
+    height: 2.01rem;
+}
+.section-box4 .content .content-box h2{
+    height: .87rem;
+    line-height:.3rem;
+    width: 3.75rem; 
+    padding: .05rem .15rem ;
+    font-size: .18rem;
+    font-family: 微软雅黑;
+    color: #6e6c6e;
+}

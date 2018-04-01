@@ -1,0 +1,118 @@
+.top-bar {
+    height: 30px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    font-size: .35rem;
+}
+
+.top-bar h2 {
+    display: inline;
+    line-height: 30px;
+    padding-left: 1.5rem;
+}
+
+.card-selected {
+    color: rgb(255, 0, 0);
+}
+
+.slider {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider ul {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider ul li {
+    width: 100%;
+    height: 100%;
+}
+
+.slider ul li img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider dl {
+    position: absolute;
+    left: 0;
+    bottom: .8rem;
+    width: 100%;
+    height: .1rem;
+    text-align: center;
+}
+
+.slider dl dd {
+    display: inline-block;
+    width: .2rem;
+    height: .2rem;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.slider dl dd.selected {
+    background: #f60;
+}
+
+.recommond-bar {
+    display: block;
+    font-size: .5rem;
+    height: 40px;
+    margin-top: .5rem;
+    /* border-top: 1px solid rgb(124, 125, 125); */
+    margin-bottom: .2rem;
+}
+
+.border-line {
+    display: block;
+    height: 0px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgb(242, 243, 245);
+}
+
+.recommond-bar span {
+    display: inline;
+    height: 10px;
+    width: 4px;
+    color: rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
+}
+
+.recommond-bar h2 {
+    display: inline;
+}
+
+.recommond {
+    width: 100%;
+}
+
+.recommond-line {
+    margin: 0;
+    width: 100%;
+    font-size: .1rem;
+}
+
+.recommond-block {
+    float: left;
+    padding: 2px;
+    width: 2.4rem;
+}
+
+.recommond-block img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.recommond-block h2 {
+    height: 100%;
+}

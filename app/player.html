@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common/css/reset.css">
+    <link rel="stylesheet" href="common/css/font.css">
+    <link rel="stylesheet" href="common/css/style.css">
+    <link rel="stylesheet" href="assets/css/player.css">
+    <title>player</title>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+       // document.documentElement.style.fontSize = document.documentElement.clientWidth*(window.devicePixelRatio||1) / 7.5 + 'px'; 
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="quit lnr lnr-chevron-left"></a>
+        <h5 class="singer_out">
+            <a href="#" >
+            <span class="singer">鹿先森乐队</span>
+            <span class="lnr lnr-chevron-right"></span>
+            </a>
+        </h5>
+        <h2 class="title">华年</h2>
+        
+    </header>
+    <section class="main">
+        <div class="rotate"></div>
+    </section>
+    
+    <div class="operation">
+            <li class="like"></li>
+            <li class="download"></li>
+            <li class="comment"></li>
+            <li class="other"></li>
+    </div>
+    <div class="progress">
+        <span class="time"></span>
+        <div class="progress_1">
+            <div class="porgress_2"></div>
+        </div>
+        <span class="time"></span>
+    </div>
+
+    
+    <footer class="footer"> 
+        <li class="cycle"></li>    
+        <li class="previous"></li>
+        <li class="play"></li>
+        <li class="next"></li>
+        <li class="list"></li>
+    </footer>
+    <audio id="audio"></audio>
+    <script src="assets/js/player.js"></script>
+    <script>player()</script>
+</body>
+</html>
