@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: '微软雅黑';
+    background: url(../../common/img/background.jpg);
+    background-size: cover;
+}
+.header{
+    height:1.2rem;
+    width: 100%;
+    position: relative;
+    padding-bottom: .1rem;
+    display: flex;
+    border-bottom: .04rem solid #746c61;
+    flex-direction: column-reverse;
+    color: #ffffff;
+}
+.header .quit{
+    font-size: .6rem;
+    line-height: 1.2rem;
+    position:absolute;
+    top: .2rem;
+    left: .4rem;
+    color: #ffffff;
+    
+}
+.header .title{
+    width: 100%;
+    font-size: .32rem;
+    text-align: center;
+}
+.header .singer_out{
+    width: 100%;
+    font-size: .24rem;
+    margin-top: .1rem;
+    text-align: center;
+}
+.header .singer_out a{
+    color: #ffffff;
+}
+.main{
+    flex: 1;
+    position: relative;
+    
+}
+.main .rotate{
+    width: 5.6rem;
+    height: 5.6rem;
+    position: absolute;
+    border-radius: 5.6rem;
+    background: url(../../assets/images/disk.png) no-repeat,url(../../assets/images/album.png) no-repeat;
+    background-size: 5.6rem 5.6rem,3.9rem 3.9rem;
+    background-position: center ,center;
+    left: 50%;
+    top: 50%;
+    margin-top: -4.2rem;
+    margin-left: -2.8rem;
+}
+.operation{
+    height: .6rem;
+    width: 6.1rem;
+    display: flex;
+    position: absolute;
+    bottom:2.2rem;
+    left: 50%;
+    margin-left: -3.15rem;
+    
+}
+.operation li{
+    flex: 1; 
+}
+.operation .like{
+    background: url(../../assets/images/like.png) no-repeat;
+    background-size: .5rem;
+    background-position: center;
+}
+.operation .download{
+    background: url(../../assets/images/download.png) no-repeat;
+    background-size: .5rem;
+    background-position: center;
+}
+.operation .comment{
+    background: url(../../assets/images/comment.png) no-repeat;
+    background-size: .5rem;
+    background-position: center;
+}
+.operation .other{
+    background: url(../../assets/images/other.png) no-repeat;
+    background-size: .5rem;
+    background-position: center;
+    
+}
+.progress{
+   height: 0.8rem;
+   vertical-align: middle; 
+   line-height: .8rem;
+   width: 6.7rem;
+   position: absolute;
+   display: flex;
+   bottom: 1.4rem;
+   left:.4rem;
+}
+.progress .time{
+    width: .55rem;
+    height: 100%;
+    /* background: black; */
+}
+.progress .progress_1{
+    flex: 1;
+    margin: auto;
+    height: 3px;
+    background: #a7a197;
+    position: relative;
+}
+.porgress_2{
+    height: 21px;
+    width: 21px;
+    background:url(../../assets/images/s.png) no-repeat; ;
+    background-size:25px; 
+    background-position:center; 
+    border-radius: 21px;
+    position: absolute;
+    top:-9px;
+}
+.footer{
+    height: 1rem;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: .4rem;
+}
+.footer li{
+    flex: 1;
+}
+
+.footer  .cycle{
+    background: url(../../assets/images/cycle.png) no-repeat;
+    background-size: .7rem;
+    background-position: center ;
+}
+.footer  .previous{
+    background: url(../../assets/images/previous.png) no-repeat;
+    background-size: .7rem;
+    background-position: center ;
+
+}
+.footer  .play{
+    background: url(../../assets/images/play.png) no-repeat;
+    background-size: 1rem;
+    background-position: center top;
+
+}.footer  .next{
+    background: url(../../assets/images/next.png) no-repeat;
+    background-size: .7rem;
+    background-position: center ;
+
+}
+.footer  .list{
+    background: url(../../assets/images/list.png) no-repeat;
+    background-size: .7rem;
+    background-position: center     ;
+}
