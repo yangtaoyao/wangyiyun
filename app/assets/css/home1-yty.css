@@ -48,6 +48,17 @@ body {
     overflow-y: scroll;
 }
 /*  */
+
+.section-button{
+    height: 2.03rem;
+    display: flex;
+}
+.section-button img{
+    flex: 1;
+    height: 2.03rem;
+    display: block;
+}
+/*  */
 .section-box1{
    
 }
@@ -94,6 +105,9 @@ flex-direction: row;
     text-align: center;
     left: .24rem;
     /* font-weight: bold; */
+}
+.title h2:hover{
+    color: red;
 }
 .title span{
     height: .40rem;
