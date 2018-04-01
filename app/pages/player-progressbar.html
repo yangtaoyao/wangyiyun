@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/player-progressbar.css">
+</head>
+
+<body>
+    <!--进度条  -->
+
+    <div id="box">暂停</div>
+    <div id='box2'>播放</div>
+    <div class="progress">
+        <div class="progress_bg">
+            <div class="progress_bar"></div>
+        </div>
+        <div class="progress_btn"></div>
+    </div>
+    <audio src="../assets/audio/Akie秋绘 春天，来吧.mp3" autoplay id="player"></audio>
+    <script src="../common/js/jquery-1.11.3.min.js"></script>
+    <script>
+        var audioObj = document.getElementById('player');
+        var stopBtn = $('#box');
+        var playBtn = $('#box2');
+        stopBtn.on('click', function() {
+            if (audioObj.play) {
+                audioObj.pause();
+            }
+        });
+        playBtn.on('click', function() {
+            if (audioObj.pause) {
+                audioObj.play();
+            }
+        })
+
+
+        $(function() {
+            console.log(window.navigator.userAgent);
+            var tag = false,
+                ox = 0,
+                left = 0,
+                bgleft = 0;
+            var timer = setInterval(function() {
+                left = audioObj.currentTime / audioObj.duration * 300;
+                $('.progress_btn').css('left', left);
+                $('.progress_bar').width(left);
+
+            }, 500);
+
+
+            if (navigator.userAgent == 'Mozilla / 5.0(Windows NT 10.0; Win64; x64) AppleWebKit / 537.36(KHTML, like Gecko) Chrome / 65.0 .3325 .181 Safari / 537.36'); {
+                $('.progress_btn').mousedown(function(e) {
+                    e.stopPropagation();
+                    ox = e.pageX - left;
+                    tag = true;
+                });
+                $(document).mouseup(function() {
+                    tag = false;
+                });
+                $('.progress').mousemove(function(e) { //鼠标移动
+                    e.stopPropagation();
+                    if (tag) {
+                        left = e.pageX - ox;
+                        if (left <= 0) {
+                            left = 0;
+                        } else if (left > 300) {
+                            left = 300;
+                        }
+                        $('.progress_btn').css('left', left);
+                        $('.progress_bar').width(left);
+                        audioObj.currentTime = parseInt(left / 300 * audioObj.duration);
+                    }
+                });
+                $('.progress_bg').click(function(e) { //鼠标点击
+                    e.stopPropagation();
+                    if (!tag) {
+                        bgleft = $('.progress_bg').offset().left;
+                        left = e.pageX - bgleft;
+                        if (left <= 0) {
+                            left = 0;
+                        } else if (left > 300) {
+                            left = 300;
+                        }
+                        $('.progress_btn').css('left', left);
+                        $('.progress_bar').animate({
+                            width: left
+                        }, 0);
+                        audioObj.currentTime = parseInt(left / 300 * audioObj.duration);
+                        // console.log(audioObj.currentTime, audioObj.duration);
+                    }
+                });
+            }
+            if (navigator.userAgent == 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1') {
+                $('.progress_btn').on('touchstart', function(e) {
+                    e.stopPropagation();
+                    ox = e.pageX - left;
+                    tag = true;
+                });
+
+                $(document).on('touchend', function() {
+                    tag = false;
+                });
+
+                $('.progress').on('touchmove', function(e) { //鼠标移动
+                    e.stopPropagation();
+                    if (tag) {
+                        left = e.pageX - ox;
+                        if (left <= 0) {
+                            left = 0;
+                        } else if (left > 300) {
+                            left = 300;
+                        }
+                        $('.progress_btn').css('left', left);
+                        $('.progress_bar').width(left);
+                        audioObj.currentTime = parseInt(left / 300 * audioObj.duration);
+                    }
+                });
+            }
+
+
+        });
+    </script>
+
+</body>
+
+</html>
