@@ -1,0 +1,178 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    height: .8rem;
+    background: #d53c34;
+    font-size: 0;
+    position: relative;
+}
+.header a {
+	display: block;
+	color: #ffffff;
+}
+.header a span {
+	display: block;
+    font-size: .4rem;
+    line-height: .8rem;
+	position: absolute;
+	top: 0;
+}
+.header a .back{
+	position: absolute;
+    left: .3rem;
+}
+
+.header .title{
+	display: block;
+	font-size: .3rem;
+	line-height: .8rem;
+	text-align: center;
+	color: #fff;
+
+}
+
+.main{
+	flex: 1;
+	height: 0;
+	overflow-y: scroll;
+}
+
+.classify {
+    height: .7rem;
+    overflow: hidden;
+    position: relative;
+}
+.classify .scroller {
+	width: 100%;
+    position: absolute;
+	height: .7rem;
+	color:black;
+}
+.classify ul {
+	padding-left: .3rem;
+	margin: 0;
+    height: 100%;
+    white-space: nowrap;
+}
+.classify ul li {
+    display: inline-block;
+    font-size: .26rem;
+    font-weight: 100;
+    padding: 0 .3rem;
+    height: .7rem;
+    line-height: .8rem;
+    vertical-align: top;  
+}
+.classify .border_bottom{
+	position:relative;	
+	height: auto;
+}
+
+.classify .border_bottom .se{
+	position: absolute;
+	height: .04rem;
+	background: red;
+}
+.classify ul li.selected{
+	border-bottom: .04rem #e13a34 solid;
+	color: #d75e53;
+}
+
+.mainpicture{
+	position: relative;
+	height: 3rem;
+	width: 100%;
+	border-bottom: 1px solid #666666;
+}
+
+.mainpicture img{
+	width: 100%;
+	height: 100%;
+}
+
+.song_list{
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding-left:.17rem ;
+}
+.song_list ul{
+	width: 100%;	
+}
+
+.song_list ul li{
+	height: .98rem;
+	width: 100%;
+	border-bottom: 1px solid #ecedef;
+}
+.song_list ul li.first-li >span{
+	display: block;
+    font-size: .5rem;
+    line-height: .98rem;
+	position: absolute;
+	top: 0;
+}
+.song_list ul li.first-li .left{
+	position: absolute;
+	left: .17rem;
+}
+
+.song_list ul li.first-li .right{
+	position: absolute;
+	right: .17rem;
+}
+.song_list ul li a{
+	display: flex;
+	overflow: hidden;
+	padding:.14rem 0;
+	
+}
+.song_list ul li a >strong{
+	display: block;
+	width: .7rem;	
+}
+
+.song_list ul li a >strong img{
+	width: 100%;
+	background: black;
+}
+
+.song_list ul li a >.song-name{
+	flex: 1;
+	margin-left:.2rem ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.song_list ul li a >.song-name h5{
+	font-size: .24rem;
+	line-height: 1.5;
+	font-family:"微软雅黑";
+	font-weight: 800;
+	color: #373737;
+}
+.song_list ul li a >.song-name em{
+	font-size: .17rem;
+	display: block;
+	color: #7d7d7f;
+	line-height: 1.5;
+}
+
+.loading{
+	width: 31px;
+	height:31px;
+	position: absolute;
+	background: url(../images/loading.gif)no-repeat;
+	background-size:cover ;
+	left: 50%;
+	top: 150px;
+}
+
+.footer{
+    height: .9rem;
+    background: url(../images/footer_10.jpg);
+    background-size: cover;
+    border-top: 1px solid #f0f0f0;
+}

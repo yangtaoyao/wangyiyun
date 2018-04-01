@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Songlist</title>
+    <link rel="stylesheet" href="../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../common/css/font.css">
+    <link rel="stylesheet" href="../common/css/style.css">
+    <link rel="stylesheet" href="../assets/css/songlist.css">
+    <link rel="stylesheet" href="../common/css/reset.css" />
+    <link rel="stylesheet" href="../common/css/animate.css" >
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth > 750 )deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth/7.5 + 'px';
+    </script>
+</head>
+<body>
+    <header class="header">
+    	<a href="#">
+		<span class="back lnr lnr-chevron-left "></span>
+		</a>
+		
+		<span class="title">歌曲清单</span>
+    </header>
+    <section class="main">
+    	<nav class="classify" id="wrapper">
+			<div class="scroller">
+				<ul>
+					<li data-id="1">推荐</li>
+					<li data-id="2">华语</li>
+					<li data-id="3">欧美</li>
+					<li data-id="4">日本</li>
+					<li data-id="5">韩国</li>
+				</ul>
+			</div>
+    	</nav>
+    	<div class="mainpicture">
+    		<img src="../assets/images/picture1_06.jpg" />
+    	</div>
+    	<div class="song_list">
+    		<ul class="list">
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_01.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>白羊</h5>
+						  	<em>曲肖冰</em>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_03.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>Flalmes</h5>
+						  	<em>David</em>
+						</div>
+					</a>
+				</li>
+    		</ul>
+    		<ul class="list">
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_01.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>白羊</h5>
+						  	<em>曲肖冰</em>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_03.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>Flalmes</h5>
+						  	<em>David</em>
+						</div>
+					</a>
+				</li>
+    		</ul>
+
+    		<ul class="list">
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_01.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>白羊</h5>
+						  	<em>曲肖冰</em>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_03.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>Flalmes</h5>
+						  	<em>David</em>
+						</div>
+					</a>
+				</li>
+    		</ul>
+    		<ul class="list">
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_01.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>白羊</h5>
+						  	<em>曲肖冰</em>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_03.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>Flalmes</h5>
+						  	<em>Davidff</em>
+						</div>
+					</a>
+				</li>
+    		</ul>
+    		<ul class="list">
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_01.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>白羊</h5>
+						  	<em>曲肖冰eee</em>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<strong>
+						  	<img src="../assets/images/pic_03.jpg" />
+					  	</strong>    					
+						<div class="song-name">
+						  	<h5>Flalmes</h5>
+						  	<em>David</em>
+						</div>
+					</a>
+				</li>
+    		</ul>
+    	</div>
+    </section>
+	<footer class="footer"></footer>
+
+
+	<script src="../assets/js/index.js"></script>
+    <script src="../common/js/iscroll.js"></script>
+    <script src="../common/js/jquery-1.11.3.min.js"></script>
+    <script src="../common/js/swiper.min.js"></script>
+    <script>
+    	var curIndex = 0;
+    	var wrapper = document.getElementsByClassName('song_list')[0];
+    	var myScroll = new IScroll('#wrapper',{scrollX:true,scrollY:false,click:true});
+    	var liList = document.querySelectorAll('#wrapper li');
+    	console.log(liList);
+    	var $loading = $('<p class = "loading"></p>');
+    	
+		$('.back').on('click', function(ev){
+			window.location.href="../index.html";
+		});
+
+    	document.getElementById('wrapper').onclick = function(ev){
+    		var oTarget = ev.target;
+    		if(oTarget.nodeName == 'LI'){
+    			
+    			var v =$(oTarget).index();
+    			if(v == curIndex){
+    				return;
+    			}
+    			curIndex = v;
+    			curStyle();
+				curList(curIndex);				
+    			myScroll.scrollToElement(oTarget,1000,null,null,IScroll.utils.ease.elastic);
+    		}
+    	}
+    	curStyle();
+		curList(curIndex);
+		function curStyle(){
+    		$(liList[curIndex]).addClass('selected').siblings().removeClass('selected');    		
+    	}
+		
+		function curList(ass){			
+			var oDiv = document.getElementsByClassName('list');
+			for(var i=0;i<oDiv.length;i++){
+				oDiv[i].style.display = 'none';
+			}
+			
+			var time = setTimeout(function(){
+				oDiv[ass].style.display = 'block';
+				var num = oDiv[ass].childNodes.length;
+				for(var i =0;i<num;i++)
+					$(oDiv[ass].childNodes[i]).addClass('fadeIn animated');
+			},200);
+			
+			
+		}
+		
+    	
+    </script>
+</body>
+</html>
